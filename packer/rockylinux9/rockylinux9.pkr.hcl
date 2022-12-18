@@ -34,7 +34,7 @@ source "qemu" "rockylinux9" {
     ["-cpu", "host"]
   ]
   ssh_wait_timeout = "30m"
-  http_directory   = "."
+  http_directory   = "./http"
   ssh_username     = "${local.ssh_username}"
   ssh_password     = "${local.ssh_password}"
   iso_url          = "${local.iso_url}"
